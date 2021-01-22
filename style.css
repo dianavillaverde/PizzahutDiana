@@ -78,6 +78,7 @@ nav {
     align-items: center;
     padding-bottom: 40px;
     padding-top: 40px;
+    margin-top: 20px;
 }
     
 .main-item img {
@@ -86,6 +87,8 @@ nav {
     
     
 }
+
+
 
 
 .main-item1 img {
@@ -119,10 +122,18 @@ p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     margin-bottom: 10px;
+    text-align: center;
 
     
 }
 
+pre{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: 18px;
+    display: block;
+    
+}
 
 
    
