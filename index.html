@@ -5,13 +5,29 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Pizza Hut</title>
         <link rel="stylesheet" href="style.css">
+        <script>
+            function myFunction() {
+  var d = new Date();
+  var weekday = new Array(7);
+  weekday[0] = "Kebab";
+  weekday[1] = "Chicken Supreme";
+  weekday[2] = "Heavenly Veg";
+  weekday[3] = "Supreme";
+  weekday[4] = "Marguerita";
+  weekday[5] = "Pepperoni Lovers";
+  weekday[6] = "Forest";
+
+  var n = weekday[d.getDay()];
+  document.getElementById("demo").innerHTML = n;
+}
+        </script>
+
     </head>
 
 <body>
 
-
     <div class="header">
-        <img class="header-logo" src="pizzahut-logo.png"  alt="pizzahut logotype">
+        <img class="header-logo" src="Bilder pizza hut/pizzahut-logo.png"  alt="pizzahut logotype">
         <nav>
             <a href="#">Hem</a>
             <a href="meny.html">Meny</a>
@@ -30,7 +46,7 @@
         <div class="main-item1">
             
         
-           <img class="splash-image" src="safe to visit.jpg" width="100%" alt="En stor pizza">
+           <img class="splash-image" src="Bilder pizza hut/safe to visit.jpg" width="100%" alt="En stor pizza">
 
            <h1>
             The flavor of now!
@@ -48,11 +64,32 @@
             
             Varmt välkommen - familj, vänner eller i eget sällskap!</p>
 
-            <a href="https://www.pizzahut.se/upl/files/134132/meny-sthlm.pdf">   <button class="button">Kolla på vår meny här!</button></a>
-           </div>
+          
+           
+        
+        <h3>Klicka här för att se dagens pizza!</h3>
+            <button onclick="myFunction()">Dagens pizza</button>
+
+            <p id="demo"></p>
+           
+            
+        
+        
+        </div>
 
            
-   
+        <div class="wrapper">
+            <h3>Registrera dig för exklusiva erbjudanden och rabatter.</h3>
+            <input placeholder="e-post"/>
+            <button id="button1">Registrera dig</button>
+            </div>
+
+
+            
+
+           
+
+
 
     <footer id="footer">
         <h2>© 2021 Pizza Hut</h2>
